@@ -23,16 +23,22 @@ export default function Hero() {
             planes personalizados utilizando inteligencia artificial.
           </p>
 
-          {/* Botones */}
+          {/* Botones (ARREGLADOS) */}
           <div className="flex flex-col sm:flex-row gap-4">
 
-            <button className="bg-green-500 hover:bg-green-400 transition-colors px-6 py-3 rounded-xl font-medium text-slate-950">
+            <a
+              href="#demo"
+              className="bg-green-500 hover:bg-green-400 transition-colors px-6 py-3 rounded-xl font-medium text-slate-950 text-center"
+            >
               Ver demo
-            </button>
+            </a>
 
-            <button className="border border-green-800 hover:border-green-600 hover:bg-green-900/20 transition-colors px-6 py-3 rounded-xl font-medium text-green-100">
+            <a
+              href="#repo"
+              className="border border-green-800 hover:border-green-600 hover:bg-green-900/20 transition-colors px-6 py-3 rounded-xl font-medium text-green-100 text-center"
+            >
               Ver repositorio
-            </button>
+            </a>
 
           </div>
 
@@ -72,13 +78,8 @@ export default function Hero() {
 
             <div className="space-y-3 text-sm font-mono text-green-100/80">
 
-              <p>
-                {">"} Inicializando análisis léxico...
-              </p>
-
-              <p>
-                {">"} Verificando sintaxis...
-              </p>
+              <p>{">"} Inicializando análisis léxico...</p>
+              <p>{">"} Verificando sintaxis...</p>
 
               <p className="text-green-400">
                 {">"} Análisis semántico completado
@@ -92,43 +93,25 @@ export default function Hero() {
           <div className="grid sm:grid-cols-2 gap-4">
 
             <div className="bg-slate-950 border border-green-950 rounded-2xl p-4">
-              <p className="text-green-200/60 text-sm mb-1">
-                Curso
-              </p>
-
-              <p className="font-medium">
-                Compiladores
-              </p>
+              <p className="text-green-200/60 text-sm mb-1">Curso</p>
+              <p className="font-medium">Compiladores</p>
             </div>
 
             <div className="bg-slate-950 border border-green-950 rounded-2xl p-4">
-              <p className="text-green-200/60 text-sm mb-1">
-                Docente
-              </p>
-
-              <p className="font-medium">
-                Ing. Jorge Tello
-              </p>
+              <p className="text-green-200/60 text-sm mb-1">Docente</p>
+              <p className="font-medium">Ing. Jorge Tello</p>
             </div>
 
             <div className="bg-slate-950 border border-green-950 rounded-2xl p-4 sm:col-span-2">
-              <p className="text-green-200/60 text-sm mb-1">
-                Integrantes
-              </p>
-
+              <p className="text-green-200/60 text-sm mb-1">Integrantes</p>
               <p className="font-medium leading-relaxed">
                 Henry Diaz • Giovanny Alcon • Rubén Espinoza
               </p>
             </div>
 
             <div className="bg-slate-950 border border-green-950 rounded-2xl p-4 sm:col-span-2">
-              <p className="text-green-200/60 text-sm mb-1">
-                Fecha
-              </p>
-
-              <p className="font-medium">
-                5 de mayo del 2026
-              </p>
+              <p className="text-green-200/60 text-sm mb-1">Fecha</p>
+              <p className="font-medium">5 de mayo del 2026</p>
             </div>
 
           </div>
