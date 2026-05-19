@@ -76,28 +76,28 @@ SEM-04: EDAD debe estar entre 1 y 120`,
   return (
     <section
       id="fases"
-      className="px-6 py-24 bg-gradient-to-b from-green-950 to-slate-950 text-white"
+      className="px-6 py-20 md:py-24 bg-gradient-to-b from-green-950 to-slate-950 text-white"
     >
 
       <div className="max-w-7xl mx-auto">
 
-        {/* Header */}
-        <div className="mb-16">
+        {/* HEADER */}
+        <div className="mb-14 md:mb-16">
 
-          <span className="text-green-400 font-semibold tracking-wide uppercase text-sm">
+          <span className="text-green-400 font-semibold tracking-wide uppercase text-xs md:text-sm">
             Sección 03
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mt-3 mb-6">
             Fases del Compilador
           </h2>
 
-          <div className="w-24 h-1 bg-green-500 rounded-full"></div>
+          <div className="w-20 md:w-24 h-1 bg-green-500 rounded-full"></div>
 
         </div>
 
-        {/* Timeline */}
-        <div className="space-y-10">
+        {/* TIMELINE */}
+        <div className="space-y-8 md:space-y-10">
 
           {phases.map((phase, index) => (
             <div
@@ -105,16 +105,16 @@ SEM-04: EDAD debe estar entre 1 y 120`,
               className="bg-slate-900/80 backdrop-blur-sm border border-green-950 rounded-3xl overflow-hidden hover:border-green-800 transition-colors"
             >
 
-              {/* Header */}
-              <div className="px-8 py-6 border-b border-green-950 bg-slate-950/60">
+              {/* HEADER */}
+              <div className="px-5 md:px-8 py-5 md:py-6 border-b border-green-950 bg-slate-950/60">
 
-                <div className="flex items-center gap-4 flex-wrap">
+                <div className="flex items-center gap-3 md:gap-4 flex-wrap">
 
-                  <div className="w-10 h-10 rounded-full bg-green-500/20 border border-green-500 flex items-center justify-center text-green-400 font-bold">
+                  <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-green-500/20 border border-green-500 flex items-center justify-center text-green-400 font-bold text-sm md:text-base">
                     {index + 1}
                   </div>
 
-                  <h3 className="text-2xl font-semibold text-green-300">
+                  <h3 className="text-lg md:text-2xl font-semibold text-green-300">
                     {phase.title}
                   </h3>
 
@@ -122,19 +122,19 @@ SEM-04: EDAD debe estar entre 1 y 120`,
 
               </div>
 
-              {/* Body */}
-              <div className="p-8 grid lg:grid-cols-2 gap-8">
+              {/* BODY */}
+              <div className="p-5 md:p-8 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
 
-                {/* Descripción */}
+                {/* DESCRIPCIÓN + CÓDIGO */}
                 <div>
 
-                  <p className="text-green-100/80 leading-relaxed text-lg mb-6">
+                  <p className="text-green-100/80 leading-relaxed text-sm md:text-lg mb-5 md:mb-6">
                     {phase.description}
                   </p>
 
                   <div className="bg-slate-950 border border-green-950 rounded-2xl overflow-hidden">
 
-                    <div className="flex items-center gap-2 px-5 py-4 border-b border-green-950">
+                    <div className="flex items-center gap-2 px-4 md:px-5 py-3 md:py-4 border-b border-green-950">
 
                       <div className="w-3 h-3 rounded-full bg-red-400"></div>
                       <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
@@ -142,7 +142,7 @@ SEM-04: EDAD debe estar entre 1 y 120`,
 
                     </div>
 
-                    <pre className="p-5 overflow-x-auto text-sm text-green-400 font-mono leading-relaxed">
+                    <pre className="p-4 md:p-5 overflow-x-auto text-xs md:text-sm text-green-400 font-mono leading-relaxed whitespace-pre-wrap break-words">
 {phase.code}
                     </pre>
 
@@ -150,20 +150,20 @@ SEM-04: EDAD debe estar entre 1 y 120`,
 
                 </div>
 
-                {/* Resultado */}
+                {/* RESULTADO */}
                 <div>
 
                   <div className="bg-slate-950 border border-green-950 rounded-2xl overflow-hidden h-full">
 
-                    <div className="px-5 py-4 border-b border-green-950 bg-green-950/20">
+                    <div className="px-4 md:px-5 py-3 md:py-4 border-b border-green-950 bg-green-950/20">
 
-                      <h4 className="font-semibold text-green-300">
+                      <h4 className="font-semibold text-green-300 text-sm md:text-base">
                         Resultado del análisis
                       </h4>
 
                     </div>
 
-                    <pre className="p-5 overflow-x-auto text-sm text-green-200/90 font-mono leading-relaxed">
+                    <pre className="p-4 md:p-5 overflow-x-auto text-xs md:text-sm text-green-200/90 font-mono leading-relaxed whitespace-pre-wrap break-words">
 {phase.result}
                     </pre>
 
@@ -179,7 +179,6 @@ SEM-04: EDAD debe estar entre 1 y 120`,
         </div>
 
       </div>
-
     </section>
   );
 }
